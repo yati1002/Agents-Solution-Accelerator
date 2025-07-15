@@ -5,7 +5,7 @@ This repository contains a **Databricks solution accelerator** implementing a He
 
 ## Features
 - **Lakehouse integration**: Demonstrates how to load, clean, and join healthcare-centric datasets.
-- **Healthcare agent**: tool-driven conversational or retrieval agent.
+- **Healthcare agent**: Unity Catalog tool-driven conversational agent.
 - **Notebook-driven workflow**: Explains end-to-end use—from ingestion to agent application.
 - **Databricks components**: Showcases vector store index, Mosaic AI agent framework, model serving, and Databricks Apps.
 
