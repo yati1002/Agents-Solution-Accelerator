@@ -20,7 +20,7 @@ This repository contains a **Databricks solution accelerator** implementing a He
 Clone the feature branch:
 
 ```bash
-git clone -b feature/bcheng004 https://github.com/bcheng004/databricks-heathcare-agent.git
+git clone https://github.com/yati1002/Agents-Solution-Accelerator.git
 cd databricks-heathcare-agent
 ```
 
