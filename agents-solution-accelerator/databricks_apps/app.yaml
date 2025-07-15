@@ -1,0 +1,14 @@
+command: [
+  "streamlit", 
+  "run",
+  "app.py"
+]
+
+env:
+  - name: STREAMLIT_BROWSER_GATHER_USAGE_STATS
+    value: "false"
+  - name: "SERVING_ENDPOINT"
+    # valueFrom: "serving-endpoint"
+    value: "<replace with agent endpoint name>"
+  - name: "DATABRICKS_WAREHOUSE_ID"
+    value: "<replace with SQL warehouse id>"

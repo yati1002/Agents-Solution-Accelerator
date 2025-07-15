@@ -1,0 +1,2 @@
+mlflow
+streamlit==1.45.0
