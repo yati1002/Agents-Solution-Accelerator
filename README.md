@@ -4,10 +4,10 @@
 This repository contains a **Databricks solution accelerator** implementing a Healthcare-specific AI agent using the Databricks Lakehouse platform. It integrates structured and unstructured healthcare data, enabling tool-calling workflows and AI-powered insights.
 
 ## Features
-- **Lakehouse integration**: Demonstrates how to load, clean, and join patient-centric datasets.
-- **Healthcare agent**: NLP-driven conversational or retrieval agent tailored to clinical use cases.
-- **Notebook-driven workflow**: Explains end-to-end use—from ingestion to application.
-- **ML components**: Showcases embeddings, vector stores, LLM integration, and clinical prompt tuning.
+- **Lakehouse integration**: Demonstrates how to load, clean, and join healthcare-centric datasets.
+- **Healthcare agent**: tool-driven conversational or retrieval agent.
+- **Notebook-driven workflow**: Explains end-to-end use—from ingestion to agent application.
+- **Databricks components**: Showcases vector store index, Mosaic AI agent framework, model serving, and Databricks Apps.
 
 ## Blog Post
 - `HOLDER`
