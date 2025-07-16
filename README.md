@@ -3,6 +3,10 @@
 ## Overview
 This repository contains a **Databricks solution accelerator** implementing a Healthcare-specific AI agent using the Databricks Lakehouse platform. It integrates structured and unstructured healthcare data, enabling tool-calling workflows and AI-powered insights.
 
+## Authors: 
+* [Yatish Anand](https://www.linkedin.com/in/yatish-anand-mcts-42300b193/)
+* [Bohao Cheng](https://www.linkedin.com/in/bohao-cheng-a6b58a11a/)
+
 ## Features
 - **Lakehouse integration**: Demonstrates how to load, clean, and join healthcare-centric datasets.
 - **Healthcare agent**: Unity Catalog tool-driven conversational agent.
@@ -17,7 +21,7 @@ This repository contains a **Databricks solution accelerator** implementing a He
 - Serverless compute
 
 ### Installation
-Clone the feature branch:
+Clone the repo:
 
 ```bash
 git clone https://github.com/yati1002/Agents-Solution-Accelerator.git
