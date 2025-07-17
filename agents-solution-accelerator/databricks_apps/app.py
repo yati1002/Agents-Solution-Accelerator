@@ -50,8 +50,9 @@ def sqlQuery(query: str) -> pd.DataFrame:
 @st.cache_data(ttl=30)  # only re-query if it's been 30 seconds
 def getMemberIds():
     # This example query depends on the nyctaxi data set in Unity Catalog, see https://docs.databricks.com/en/discover/databricks-datasets.html for details
+    # replace catalog.schema!
     return sqlQuery(
-        "select distinct member_id from hls_yatish.agent_solution_accelerator.member_enrolment"
+        "select distinct member_id from catalog.schema.member_enrolment"
     )
 
 
