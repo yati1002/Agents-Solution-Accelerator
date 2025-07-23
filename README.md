@@ -14,7 +14,7 @@ This repository contains a **Databricks solution accelerator** implementing a He
 - **Databricks components**: Showcases vector store index, Mosaic AI agent framework, model serving, and Databricks Apps.
 
 ## Blog Post
-- `HOLDER`
+- [Accelerating Care Delivery: Agentic AI Apps on Databricks](https://medium.com/@AI-on-Databricks/accelerating-care-delivery-agentic-ai-apps-on-databricks-c0ce280e390e)
 
 ### Prerequisites
 - A Databricks Unity Catalog enabled workspace
