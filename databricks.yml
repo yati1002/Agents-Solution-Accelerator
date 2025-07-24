@@ -1,0 +1,52 @@
+# This is a Databricks asset bundle definition for default_python.
+# See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
+bundle:
+  name: bo-cheng-dnb
+  # databricks_cli_version: ">= 0.248.0"
+
+# experimental:
+#   python:
+#     # Activate virtual environment before loading resources defined in Python.
+#     # If disabled, defaults to using the Python interpreter available in the current shell.
+#     venv_path: .venv
+#     # Functions called to load resources defined in Python. See resources/__init__.py
+#     resources:
+#       - "resources:load_resources"
+
+variables:
+  account_user_name:
+    description: string
+    default: ${workspace.current_user.userName}
+
+  # The "warehouse_id" variable is used to reference the warehouse used by the dashboard.
+  # warehouse_id:
+  #   lookup:
+  #     # Replace this with the name of your SQL warehouse.
+  #     warehouse: "bocheng_test_sql_wh"
+
+  catalog_name:
+    description: string
+    default: bo_cheng_dnb_demos
+
+  demo_schema_name:
+    description: string
+    default: genai_demo
+
+include:
+  - resources/*.yml
+  - resources/*.py
+
+targets:
+  dev:
+    # The default target uses 'mode: development' to create a development copy.
+    # - Deployed resources get prefixed with '[dev my_user_name]'
+    # - Any job schedules and triggers are paused by default.
+    # See also https://docs.databricks.com/dev-tools/bundles/deployment-modes.html.
+    mode: development
+    default: true
+    workspace:
+      host: "replace with your databricks host"
+    run_as:
+      user_name: ${var.account_user_name}
+    presets:
+      source_linked_deployment: false

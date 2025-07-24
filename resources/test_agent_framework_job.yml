@@ -1,0 +1,17 @@
+resources:
+  jobs:
+    agent-framework-job:
+      name: "mosaic-ai-agent-framework"
+      tasks:
+        - task_key: "agent-framework-task"
+          notebook_task:
+            notebook_path: "../agents-solution-accelerator/single-agent-driver-multi-tool.ipynb"
+            base_parameters:
+              catalog: bo_cheng_dnb_demos
+              model: health_agent
+              schema: agents
+              secret_scope: dbdemos
+      schedule:
+        quartz_cron_expression: "0 0 8 * * ?"
+        timezone_id: "UTC"
+        pause_status: "PAUSED"
