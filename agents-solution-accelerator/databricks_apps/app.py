@@ -29,6 +29,7 @@ def get_user_info():
         user_id=headers.get("X-Forwarded-User"),
         # Can use st.context.ip_address to get the user's IP address if not on localhost
         user_ip_address="66.249.65.103",
+        # user_ip_address=headers.get("X-Real-Ip"),
     )
 
 
